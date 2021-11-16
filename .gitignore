@@ -1,3 +1,6 @@
 .idea/*
 .ipynb_checkpoints/*
 __init__.py
+__pycache__/*
+data_generators/__pycache__/*
+data_generators/__init__.py
