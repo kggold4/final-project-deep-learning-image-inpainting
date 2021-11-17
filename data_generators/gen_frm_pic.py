@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image as mg
 from matplotlib import pyplot as plt
-IMAGE = 'elon.jpg'
+IMAGE = 'yosemite.jpg'
 
 class gen_frm_pic:
     def generate():
