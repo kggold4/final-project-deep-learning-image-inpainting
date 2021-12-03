@@ -3,6 +3,7 @@ from PIL import Image as mg
 from matplotlib import pyplot as plt
 IMAGE = 'yosemite.jpg'
 
+
 class gen_frm_pic:
     def generate():
 
