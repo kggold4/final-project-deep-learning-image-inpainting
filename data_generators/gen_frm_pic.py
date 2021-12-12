@@ -41,9 +41,9 @@ def generate_5():
     img = np.asarray(img)
 
     data = []
-    for _y in range(1000, 1200, 5):
+    for _y in range(800, 1000, 5):
 
-        for _x in range(2100, 2300, 5):
+        for _x in range(1800, 2000, 5):
 
             mat = np.zeros((5,5,3), dtype=np.uint8)
             for i in range(5):
@@ -54,8 +54,8 @@ def generate_5():
 
     img = np.asarray(img)
     data_2 = []
-    for _y in range(100 ,330, 5):
-        for _x in range(100, 330, 5):
+    for _y in range(100 ,500, 5):
+        for _x in range(100, 500, 5):
             mat = np.zeros((5, 5, 3), dtype=np.uint8)
             for i in range(5):
                 for j in range(5):
