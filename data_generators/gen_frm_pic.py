@@ -1,12 +1,12 @@
 import numpy as np
 from PIL import Image as mg
-from matplotlib import pyplot as plt
-IMAGE = 'yosemite.jpg'
-IMAGE_2 = 'GrandCanyon.jpg'
+import matplotlib.pyplot as plt
+
+IMAGE = 'images/yosemite.jpg'
+IMAGE_2 = 'images/GrandCanyon.jpg'
 
 
 def generate():
-
     img = plt.imread(IMAGE)
 
     # first and second dimension are the matrix, third dimension is the channel
@@ -25,7 +25,7 @@ def generate():
 
     img = np.asarray(img)
     data_2 = []
-    for _y in range(100 ,500, 3):
+    for _y in range(100, 500, 3):
         for _x in range(100, 500, 3):
             mat = np.zeros((3, 3, 3), dtype=np.uint8)
             for i in range(3):
@@ -33,7 +33,9 @@ def generate():
                     mat[i][j] = np.asarray(img[_y + i][_x + j])
             data_2.append(mat)
 
-    return data,data_2
+    return data, data_2
+
+
 def generate_5():
     img = plt.imread(IMAGE)
 
@@ -45,7 +47,7 @@ def generate_5():
 
         for _x in range(1800, 2000, 5):
 
-            mat = np.zeros((5,5,3), dtype=np.uint8)
+            mat = np.zeros((5, 5, 3), dtype=np.uint8)
             for i in range(5):
                 for j in range(5):
                     mat[i][j] = np.asarray(img[_y + i][_x + j])
@@ -54,7 +56,7 @@ def generate_5():
 
     img = np.asarray(img)
     data_2 = []
-    for _y in range(100 ,500, 5):
+    for _y in range(100, 500, 5):
         for _x in range(100, 500, 5):
             mat = np.zeros((5, 5, 3), dtype=np.uint8)
             for i in range(5):
@@ -62,8 +64,8 @@ def generate_5():
                     mat[i][j] = np.asarray(img[_y + i][_x + j])
             data_2.append(mat)
 
-    return data,data_2
-        
-if __name__ == "__main__":
+    return data, data_2
 
+
+if __name__ == "__main__":
     generate_5()
