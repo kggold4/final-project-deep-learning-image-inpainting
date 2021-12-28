@@ -5,3 +5,4 @@ __init__.py
 __pycache__/*
 data_generators/__pycache__/*
 data_generators/__init__.py
+images/auto_coder_data/*
